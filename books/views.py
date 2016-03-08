@@ -76,6 +76,7 @@ class ReviewList(View):
 	
 		return render(request, "list-to-review.html", context)
 	
+@login_required	
 def review_book(request, pk):
 	"""
 	Review an individual book
